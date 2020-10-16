@@ -1,0 +1,24 @@
+{
+  "name": "nauka-gita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anutalinda7/nauka-gita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anutalinda7/nauka-gita/issues"
+  },
+  "homepage": "https://github.com/anutalinda7/nauka-gita#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "html-validate": "^3.4.1"
+  }
+}
