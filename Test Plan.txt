@@ -1,0 +1,83 @@
+Positive Test Cases
+    1. Initial Verification
+        ◦ Description: Verify that a user can add a new todo item.
+        ◦ Steps:
+            1. Navigate to https://todomvc.com/examples/javascript-es6/dist/#/.
+            2. Check that h1 have text ‘todos’
+            3. Check that input field has placeholder with text ‘What needs to be done?’
+            4. Enter a new todo item in the input field.
+            5. Press Enter.
+            6. Check that all three btn are visible and have text ['All', 'Active', 'Completed']
+        ◦ Expected Result: All initial verification passed 
+    2. Add a New Todo Item
+        ◦ Description: Verify that a user can add a new todo item.
+        ◦ Steps:
+            1. Navigate to https://todomvc.com/examples/javascript-es6/dist/#/.
+            2. Enter a new todo item in the input field.
+            3. Press Enter.
+            4. Assert that the new todo item appears in the list.
+        ◦ Expected Result: New todo item is added to the list.
+    3. Edit an Existing Todo Item
+        ◦ Description: Verify that a user can edit an existing todo item.
+        ◦ Steps:
+            1. Add a new todo item.
+            2. Double-click on the todo item to edit.
+            3. Modify the text and press Enter.
+            4. Assert that the modified text is saved and displayed.
+        ◦ Expected Result: Todo item text is updated.
+    4. Mark a Todo Item as Completed
+        ◦ Description: Verify that a user can mark a todo item as completed.
+        ◦ Steps:
+            1. Add a new todo item.
+            2. Click the checkbox next to the todo item.
+            3. Assert that the item is marked as completed.
+        ◦ Expected Result: Todo item is marked as completed (line-through style).
+    5. Delete a Todo Item
+        ◦ Description: Verify that a user can delete a todo item.
+        ◦ Steps:
+            1. Add a new todo item.
+            2. Click the delete button (X) next to the todo item.
+            3. Assert that the item is removed from the list.
+        ◦ Expected Result: Todo item is deleted.
+    6. Filter Todo Items (Active)
+        ◦ Description: Verify that the user can filter to show only active (not completed) todo items.
+        ◦ Steps:
+            1. Add multiple todo items.
+            2. Mark some items as completed.
+            3. Click on the "Active" filter.
+            4. Assert that only active items are displayed.
+        ◦ Expected Result: Only active todo items are shown.
+    7. Filter Todo Items (Completed)
+        ◦ Description: Verify that the user can filter to show only completed todo items.
+        ◦ Steps:
+            1. Add multiple todo items.
+            2. Mark some items as completed.
+            3. Click on the "Completed" filter.
+            4. Assert that only completed items are displayed.
+        ◦ Expected Result: Only completed todo items are shown.
+    8. Clear Completed Todo Items (in two ways) 2 different TC in Cypress
+        ◦ Description: Verify that a user can clear all completed todo items.
+        ◦ Steps:
+            1. Add multiple todo items.
+            2. Mark some items as completed.
+            3. Click on the "Clear completed" button.
+            4. Assert that all completed items are removed from the list.
+        ◦ Expected Result: Completed todo items are cleared.
+    9. Data Persistence Across Page Reloads
+        ◦ Description: Verify that todo items persist across page reloads.
+        ◦ Steps:
+            1. Add multiple todo items.
+            2. Reload the page.
+            3. Assert that all todo items are still displayed as they were before the reload.
+        ◦ Expected Result: Todo items persist across page reloads.
+    10.  Check Dynamic Changes Numbers of Items
+        ◦ Description: Verify that todo items persist across page reloads.
+        ◦ Steps:
+            1. Add multiple todo items.
+            2. Assert the numbers of items
+            3. Mark the first items as completed
+            4. Assert the numbers of items
+            5. Add new todo items
+            6. Assert that the numbers of items
+        ◦ Expected Result: The number of todo items changed dynamically.
+
