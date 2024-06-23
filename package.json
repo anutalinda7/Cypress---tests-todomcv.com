@@ -2,12 +2,20 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "all": "npx cypress run",
+    "spec": "npx cypress run --spec 'cypress/e2e/todos.cy.js' --headed",
+    "chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/todos.cy.js' --headed",
+    "edge": "npx cypress run --browser edge --headed",
+    "browsers": "npx cypress run --browser edge --headed & npx cypress run --browser chrome --headed"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "cypress": "=12.16.0",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-dark": "^1.8.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha-junit-reporter": "^2.2.1"
   },
   "dependencies": {
     "-": "0.0.1",
@@ -15,5 +23,6 @@
   },
   "engines": {
     "node": ">=10.0.0"
-  }
+  },
+  "video": true
 }
