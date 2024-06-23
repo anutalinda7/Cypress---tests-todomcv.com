@@ -18,43 +18,6 @@ describe('User Profile Tests', () => {
                 cy.get('.phone').eq(0).should('contain', user.phoneNumbers[0].number);
                 cy.get('.phone').eq(1).should('contain', user.phoneNumbers[1].number)
             })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //   expect(user.isStudent).to.equal(false);
-        //   expect(user.address.city).to.include('New');
-        
-        //   expect(user.phoneNumbers[0].number).to.include('2')
-        
-
-          
-        //   // Use the fixture data in your test
-        //   cy.get('#name').should('have.value', user.name);
-        //   // Additional assertion to check the value directly
-        //   cy.get('#name').invoke('val').should('equal', 'John Doe');
         });
       });
     });

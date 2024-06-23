@@ -30,7 +30,7 @@ describe('User Profile Tests', () => {
             clickShadowBtn(i);
         }
     })
-
+ 
     it('Verify Menu Items Under Each Button', () => {
         // Assuming each button shows a menu
         const menuItemSelectors = ['#menuItemsGroup1', '#menuItemsGroup2', '#menuItemsGroup3', '#menuItemsGroup4'];
@@ -38,14 +38,6 @@ describe('User Profile Tests', () => {
             cy.get('.smart-ui-component').shadow().contains(btnName).click();
             cy.get('.smart-ui-component').shadow().find(menuItemSelectors[index]).should('exist');
         });
-    });
-
-    it('Click Multiple Buttons Sequentially', () => {
-        clickShadowBtn(0);
-        clickShadowBtn(1);
-        clickShadowBtn(2);
-        clickShadowBtn(3);
-        // cy.get('.smart-ui-component').shadow().find('#menuItemsGroupb5ce').click();
     });
   
 })
